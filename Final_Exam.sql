@@ -11,7 +11,7 @@ WHERE
 
 
 /* 2) Display the identifications of the pilots 
- who have more than two flights (>=) departures from Montreal */
+ who have more than two flights (>=) departures from Montreal. */
 SELECT
 	PILOT_ID,
 	COUNT(*) AS 'FLIGHTS'
@@ -104,7 +104,7 @@ WHERE
 
 
 /* 7) Display the pilots (id, name and city name) 
-who live in the same city as the localization city of the AIRBUS */
+who live in the same city as the localization city of the AIRBUS. */
 SELECT
 	DISTINCT PILOT_ID,
 	LAST_NAME,
@@ -236,6 +236,6 @@ SELECT
 	COUNT(*) AS 'count'
 FROM
 	FLIGHT F JOIN 
-	PILOT P ON F.PILOT_ID = P.PILOT_ID
+	PILOT PON F.PILOT_ID = P.PILOT_ID
 GROUP BY
 	F.PILOT_ID, LAST_NAME, FIRST_NAME
