@@ -1,4 +1,4 @@
-# T-SQL_Final_Exam
+# SQL_Final_Exam
 
 1) Display the name and the capacity of the AIRBUS planes.
 <br>(Plane's description that starts with A->AIRBUS, B->BOEING, 
